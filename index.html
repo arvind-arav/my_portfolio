@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Arvind's Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+  <style>
+    
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 100px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px; 
+      
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+</head>
+<body>
+
+
+<body class="body-dark">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <header id="top">
+    <a class="icon-border header-title" href="#">AJ</a>
+    <nav>
+      <ul>
+        <li>
+          <a href="#project" class="link">About</a>
+        </li>
+        <li>
+        <a href="https://instagram.com/_arvind_photography_?igshid=YmMyMTA2M2Y=" class="link">Photos</a>
+        </li>
+        <li>
+          <a href="#contact" class="link">Contact</a>
+        </li>
+      </ul>
+      
+      <button aria-label="Toggle navbar">
+        <i aria-hidden="true" class="icon-normal fas fa-bars"></i>  
+      </button>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>
+      Hi... I'm
+      <span class="hero-name">Aravind</span>
+     
+    </h1>
+
+    <div class="hero-about">
+      <p>
+        Hello there :) <br>
+        Thank you for visiting my website.
+        I'm Aravind from Erode and I'm currently pursuing my master's degree 
+        in Kumaraguru COllege OF Technology, Coimbatore.
+      </p>
+
+      <a class="resume" href="https://drive.google.com/file/d/1idUDtjZtkHwDAnoCCc45dGDQ7vv5vqDJ/view?usp=sharing">
+        <span class="btn">Resume</span>
+      </a>   
+    </div>
+  </div>
+
+  <section id="project" class="project">
+    <h2 class="section-title">Skills & Interests</h2>
+
+    <div class="project-container">
+
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          
+          <img src="istockphoto-1334427520-170667a.jpg" style="width: 450px">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+       
+          <img src="photo-1502982720700-bfff97f2ecac.jpg" style="width: 450px">
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+       
+          <img src="photo-1515879218367-8466d910aaa4.jpg" style="width: 450px">
+          <div class="text"></div>
+        </div>
+
+       
+        
+     
+        
+        </div>
+        <br>
+        
+       <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          
+        </div>   
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3500); // Change image every 3.5 seconds
+        }
+        </script>
+
+      <div class="project-content">
+        <h2 class="section-title">Interests</h2>
+        <h3>IoT</h3>
+        <h3>Photography</h3>
+        ------------------------
+
+        <h2 class="section-title">Skills</h2>
+        <h3>C programming</h3>
+        <h3>Python</h3>
+       <!-- <h3>Farming</h3> -->
+        <!--<p>A clean and simple portfolio template for developers.</p>  -->
+
+       <!-- <ul class="project-skill">
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React.js</li>
+        </ul>
+
+        <ul class="project-link">
+          <li>
+            <a href="#" aria-label="Source code" title="source code" rel="noopener"><i class="icon-border fas fa-code"></i></a>
+          </li>
+          <li>
+            <a href="#" aria-label="Preview" title="preview" rel="noopener"><i aria-hidden="true" class="icon-border fas fa-external-link-alt"></i></a>
+          </li>
+        </ul>  -->
+      </div>
+    </div>
+
+    <div class="project-container">
+     
+		<!--	<img src="./assets/images/startpage.png" alt="startpage" />  
+			<div class="project-content">
+				<h3>Startpage</h3>
+				<p>A minimal startpage for Firefox.</p>
+				<ul class="project-skill">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+				</ul>
+				<ul class="project-link">
+					<li>
+						<a href="#" aria-label="Source code" target="_blank"
+							title="source code" rel="noopener"><i class="icon-border fas fa-code"></i></a>
+					</li>
+					<li>
+						<a href="#" aria-label="Preview" target="_blank"
+							title="preview" rel="noopener"><i aria-hidden="true"
+								class="icon-border fas fa-external-link-alt"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div> 
+  </section>
+
+  <!-- <section id="stack" class="stack">
+    <h2 class="section-title">Photos</h2>
+    <div class="stack-container">
+      <div class="tech-container">
+        <i class="C:\Users\Harishma\Pictures\Saved Pictures\wallpapers\download.png"></i>
+        HTML
+      </div>
+      <div class="tech-container">
+        <i class="devicon-css3-plain colored"></i>
+        CSS
+      </div>
+      <div class="tech-container">
+        <i class="devicon-javascript-plain colored"></i>
+        JavaScript
+      </div>
+      <div class="tech-container">
+
+        <i class="devicon-php-plain colored"></i>
+
+        Php
+      </div>
+      <div class="tech-container">
+        <i class="devicon-dart-plain colored"></i>
+        Dart
+      </div>
+      <div class="tech-container">
+        <i class="devicon-flutter-plain colored"></i>
+        Flutter
+      </div>
+      <div class="tech-container">
+        <i class="devicon-c-plain colored"></i>
+        C
+      </div>
+
+      <div class="tech-container">
+
+        <i class="devicon-java-plain-wordmark colored"></i>
+
+        Java
+      </div>
+      <div class="tech-container">
+
+        <i class="devicon-mysql-plain colored"></i>
+
+        Mysql
+      </div>
+
+      <div class="tech-container">
+        <i class="devicon-linux-plain"></i>
+        Linux
+      </div> 
+      <div class="row">
+        <div class="column">
+          <img src="img_snow.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="img_forest.jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+        </div>
+      </div>
+
+    </div> -->
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get in touch</h2>
+
+    <ul>
+      <li>
+       <!-- <a href="mailto:vatsalmangukiya9003@gmail.com">
+          <span class="btn">  -->
+            <a href="https://www.linkedin.com/in/aravind-jayakumar-0b61a01b4/" class="fa fa-linkedin"></a>
+            
+          </span>
+        </a>
+      </li>
+
+      <li>
+       <!-- <a href="https://github.com/vats147" aria-label="Github">
+          <span class="btn">-->
+            <a href="https://www.snapchat.com/add/aravind4742?share_id=9iR8x5RRfA8&locale=en-IN" class="fa fa-snapchat-ghost"></a>
+            
+          </span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://instagram.com/_arvind_photography_?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a>
+      </li>
+      <br> 
+      <li>
+      <a href="https://arvindphotography03.blogspot.com/" class='fab fa-blogger-b' style='font-size:48px;color:red'></a>
+
+        
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <small>&copy; 2022-2023 Arvind</small>
+  </footer>
+
+  <div class="scroll-container">
+    <div aria-label="Scroll up" class="scroll-up">
+      <a href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
